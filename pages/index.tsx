@@ -53,10 +53,7 @@ function Index(props: IndexProps) {
   return (
     <div className="container layout vbox" style={{ gap: '30px' }}>
       <Link href="./links/create"><button className="button is-primary">Create a New Link</button></Link>
-      <div className="popular-box layout vbox" style={{
-        border: '1px solid #0004',
-        boxShadow: '0 4px 15px #0005, 0 2px 5px #0006'
-      }}>
+      <div className="popular-box layout vbox" >
         <h2 className="layout self-center" style={{ fontSize: '15pt', fontWeight: 'bold', fontStyle: 'italic', margin: '5px' }}>Most Popular:</h2>
         <div className="container">
           <table className="table">
@@ -67,6 +64,7 @@ function Index(props: IndexProps) {
                 <th>Link</th>
                 <th>Count</th>
                 <th>Created</th>
+                <th></th>
                 <th></th>
               </tr>
             </thead>
