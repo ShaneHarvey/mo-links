@@ -6,7 +6,6 @@ import { WithId } from 'mongodb';
 
 
 // Define the components props
-
 interface IndexProps {
   links: ExtendedJSONEncoded<WithId<MoLink>>[];
 }
